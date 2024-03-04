@@ -1,0 +1,36 @@
+// Corrigindo a função verificarMaiorIdade
+function verificarMaiorIdade(idade) {
+    return idade >= 18 ? 'Maior de idade' : 'Menor de idade'; // Corrigido para verificar se a idade é maior ou igual a 18
+}
+
+// Completando a função orderArray para criar uma lista ordenada de 0 a 9
+function orderArray() {
+    let arr = []; // Inicializa um array vazio
+    for (let i = 0; i < 10; i++) {
+        arr.push(i); // Adiciona os números de 0 a 9 ao array
+    }
+    return arr; // Retorna o array completo
+}
+
+// Corrigindo e modificando a função meusDados
+function meusDados() {
+    let pessoa = {
+        nome: 'Jonathan', // Alterando o nome para Jonathan
+        idade: 26, // Alterando a idade para 26
+        cidade: 'Cianorte' // Alterando a cidade para Cianorte
+    };
+    delete pessoa.idade; // Excluindo o campo idade conforme solicitado
+    return pessoa;
+}
+
+// Completando e corrigindo a função manipulaArray
+function manipulaArray() {
+    let animais = ['cachorro', 'gato', 'abelha', 'rato', 'leão', 'galinha'];
+
+    return {
+        ordemAlfabetica: animais.sort(), // Ordena o array em ordem alfabética
+        primeiro: animais[0], // Retorna o primeiro elemento do array
+        ultimo: animais[animais.length - 1], // Retorna o último elemento do array
+        tamanhoDaLista: animais.length // Retorna o tamanho do array
+    };
+}
